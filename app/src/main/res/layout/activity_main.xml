@@ -20,7 +20,8 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBarhomens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultadoCarne" />
+        app:layout_constraintTop_toBottomOf="@+id/resultadoCarne"
+        android:focusableInTouchMode="false"/>
 
     <SeekBar
         android:id="@+id/seekBarhomens"
@@ -49,7 +50,8 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBarMulheres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBarhomens" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBarhomens"
+        android:focusableInTouchMode="false"/>
 
     <SeekBar
         android:id="@+id/seekBarMulheres"
@@ -91,7 +93,8 @@
         app:layout_constraintBottom_toTopOf="@+id/seekbarCriancas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBarMulheres" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBarMulheres"
+        android:focusableInTouchMode="false"/>
 
     <Button
         android:id="@+id/calcular"
@@ -120,6 +123,7 @@
         android:inputType="textPersonName"
         android:text="Liguiça"
         android:textSize="12sp"
+        android:focusableInTouchMode="false"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toStartOf="@+id/resultadoLinguca"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,6 +139,7 @@
         android:layout_marginBottom="35dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:focusableInTouchMode="false"
         android:text="Carne"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
@@ -181,7 +186,8 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/seekBarhomens"
-        app:layout_constraintStart_toEndOf="@+id/seekBarhomens" />
+        app:layout_constraintStart_toEndOf="@+id/seekBarhomens"
+        android:focusableInTouchMode="false"/>
 
     <EditText
         android:id="@+id/NumerodeMulheres"
@@ -192,7 +198,8 @@
         android:layout_alignEnd="@id/seekBarMulheres"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/seekBarMulheres"
-        app:layout_constraintStart_toEndOf="@+id/seekBarMulheres" />
+        app:layout_constraintStart_toEndOf="@+id/seekBarMulheres"
+        android:focusableInTouchMode="false"/>
 
     <EditText
         android:id="@+id/NumerodeCriancas"
@@ -203,5 +210,6 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/seekbarCriancas"
-        app:layout_constraintStart_toEndOf="@+id/seekbarCriancas" />
+        app:layout_constraintStart_toEndOf="@+id/seekbarCriancas"
+        android:focusableInTouchMode="false"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
