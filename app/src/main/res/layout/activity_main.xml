@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quantidade de homens"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarhomens"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoCarne" />
+
+    <SeekBar
+        android:id="@+id/seekBarhomens"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quantidade de mulheres"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarMulheres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarhomens" />
+
+    <SeekBar
+        android:id="@+id/seekBarMulheres"
+        android:layout_width="211dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <SeekBar
+        android:id="@+id/seekbarCriancas"
+        android:layout_width="210dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quantiade de crianças"
+        app:layout_constraintBottom_toTopOf="@+id/seekbarCriancas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarMulheres" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="21dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resultadoCarne"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="Calcular"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Liguiça"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toStartOf="@+id/resultadoLinguca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="53dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Carne"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/resultadoCarne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <TextView
+        android:id="@+id/resultadoLinguca"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="11dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoCarne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/resultadoCarne"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoLinguca"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/NumerodeHomens"
+        android:layout_width="40dp"
+        android:layout_height="44dp"
+        android:layout_alignEnd="@id/seekBarhomens"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarhomens"
+        app:layout_constraintStart_toEndOf="@+id/seekBarhomens" />
+
+    <EditText
+        android:id="@+id/NumerodeMulheres"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:layout_alignEnd="@id/seekBarMulheres"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarMulheres"
+        app:layout_constraintStart_toEndOf="@+id/seekBarMulheres" />
+
+    <EditText
+        android:id="@+id/NumerodeCriancas"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignEnd="@id/seekbarCriancas"
+        android:layout_marginStart="9dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/seekbarCriancas"
+        app:layout_constraintStart_toEndOf="@+id/seekbarCriancas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
